@@ -1,0 +1,256 @@
+.cell {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #25259e;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s;
+    font-size: 25px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 30px;
+
+  }
+  
+  .default {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .cell:hover {
+    box-shadow: 0px 20px 60px -10px rgba(253, 253, 253, 0.918);
+  }
+  
+  .shuffle {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    padding: 0px 20px 0px 20px;
+    width: auto;
+    height: auto;
+    background: white;
+    border: solid 2px #ffaaaa;
+    border-radius: 7px;
+    color: #ffaad4;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 45px;
+    
+  }
+  
+  .shuffle:hover {
+    background: #f9f9f9;
+  }
+  
+  .details {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: gray;
+    color: white;
+    padding: 20px;
+    font-weight: 100;
+    
+  }
+  
+  .details h1 {
+    color:bisque;
+    text-shadow: 3px 2px bisque;
+    font-size: 20pt;
+    font-weight:lighter;
+    max-width: 50px;
+    text-align: center;
+    margin-left: 40%;
+    display: inline;
+  }
+  
+  .details p {
+    color: #110808;
+    font-size: 14px;
+    font-family: cursive;
+    font-weight: bold;
+    line-height: 5em;
+    margin: 0;
+    padding-top: 50px;
+  }
+  
+  
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30px;
+  }
+  
+  .main {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+      helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    padding: 30px 70px 30px 70px;
+    height: auto;
+    display: flex;
+  }
+  
+  .grid {
+    flex: 1;
+  }
+  
+  .ant-btn-primary {
+    background-color: #ca6a9a !important;
+    border-color: #ca6a9a !important;
+  }
+  .git{
+    position: relative;
+    bottom: 5em;
+    left: 35em;
+background-color: black;
+width: 20%;
+
+  }
+  .btn{
+    margin-inline: 20px;
+    border: solid 1px black;
+  }
+  .btn Button{
+    position: relative;
+    top: 10rem;
+    left: 20rem;
+    width: 150px;
+    background-color: grey;
+    color: khaki;
+    box-shadow: 10px 10px 60px -1px rgb(49, 49, 49);
+
+  }
+  .loader{
+    position: relative;
+    bottom: 26em;
+    left:8em;
+    width: 30%;
+  } 
+  #btn-git{
+    position: relative;
+    float: right;
+    right: 32em;
+    bottom: 27em;
+    border-radius: 50%;
+    width: 85px;
+    height: 65px;
+    background-color: rgb(96, 224, 224);
+  }
+
+/* LARGE SCREENS */
+@media(max-width:700px){
+      .btn Button{
+    margin: auto;
+    position: relative;
+    bottom: 50px;
+    right:700px;
+    }
+  
+    .wrapper > *{
+      padding:2em;
+    }
+  .container{
+    width: auto;
+    height: fit-content;
+  }
+  .cell{
+    position: relative;
+
+    width: auto;
+    /* height: 650px; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .details {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;    
+    height: 100%;
+    background: gray;
+    color: white;
+    font-weight: 100;
+  }
+    .details h1 {
+      color: black;
+      font-size: 8pt;
+      font-weight:bold;
+      text-align: center;
+      margin-left: 30%;
+      display: inline;
+      
+    }
+    .details p {
+      color: #110808;
+      font-size: 4px;
+      margin: 0;
+      position: relative;
+      bottom: 12px;
+      line-height: 20px;
+    }
+    .btn{
+      border: solid 1px black;
+     position: relative;
+    }
+    .btn Button{
+      position: static;
+      top: 6rem;
+      left: 1rem;
+      width: auto;
+      background-color: grey;
+      color: khaki;
+      box-shadow: 10px 10px 60px -1px rgb(49, 49, 49);
+    }
+  
+  .loader{
+    position: relative;
+    bottom: 23em;
+    left:2em;
+    width: 30%;
+  } 
+  #btn-git{
+    position: relative;
+    float: right;
+    right: 11em;
+    bottom: 22em;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(96, 224, 224);
+  }
+  #github{
+    font-size: 6px;
+  }
+ 
+}

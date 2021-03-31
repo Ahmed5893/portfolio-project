@@ -1,0 +1,105 @@
+
+
+
+.container{
+  background-color: black;
+  min-height: 30em;
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  border:solid 10px black;
+}
+
+svg {
+  pointer-events: none;
+  position: absolute;
+  top: 81%;
+  left: 86%;
+  width: 20vw;
+  max-width: 600px;
+  transform-origin: 0% 0%;
+
+}
+
+#bg {
+  fill: #16303d;
+}
+#sweater > path:nth-child(1) {
+  fill: #60d8d2;
+}
+#sweater > path:nth-child(2) {
+  fill: #3751c4;
+}
+#sweater > path:nth-child(3) {
+  fill: #153123;
+}
+
+#face > path:nth-child(1) {
+  fill: #d49951;
+}
+#face > path:nth-child(2) {
+  fill: #d49951;
+}
+#eye > path:nth-child(2) {
+  fill: #f0f0f0;
+}
+#eye > g:first-of-type > path:nth-child(1) {
+  fill: #0f1414;
+}
+#eye > g:first-of-type > path:nth-child(2) {
+  fill: #0a1414;
+}
+#eye > g:last-of-type > path:nth-child(2) {
+  fill: #332f30;
+}
+#mouth > path:nth-child(1) {
+  fill: #c86781;
+}
+#mouth > path:nth-child(2) {
+  fill: #b7092b;
+}
+#mouth > path:nth-child(3) {
+  fill: #85122d;
+}
+#mouth > path:nth-child(4) {
+  fill: #ffffff;
+}
+#hair > path:nth-of-type(1) {
+  fill: #070508;
+}
+#hair > path:nth-of-type(2) {
+  fill: #08050a;
+}
+#hair > path:nth-of-type(3) {
+  fill: #09060a;
+}
+#intro {
+  color: blanchedalmond;
+  font-size: 35pt;
+  font-family: cursive;
+  text-align: left;
+  position: relative;
+  top: 90px;
+  width: 85%;
+  display: inline-block;
+  text-shadow: 2px 1px gray;
+}
+/* LARGE SCREENS */
+@media(max-width:700px){
+#intro{
+  color: aquamarine;
+font-size: 15pt;
+width: auto;
+line-height: 30px;
+}
+svg{
+  width: 15vh;
+  transform-origin: 0% 0%;
+
+}
+.container{
+  height: fit-content;
+  width: auto;
+}
+
+}

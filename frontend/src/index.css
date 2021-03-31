@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  
+}
+*::-webkit-scrollbar{
+  display: none;
+}
+.container{
+  box-shadow: 2px 60px 35px 40px  rgb(175, 166, 166);
+
+
+}
+.Nav{
+text-decoration: none;
+font-style: italic;
+display: flex;
+align-content: space-between;
+gap: 15px;
+}
+.Nav :hover{
+  text-decoration: gray;
+
+}
+
+#Brand span{
+  color:chocolate;
+  font-family:monospace;
+}
+#email{
+  position: relative;
+  bottom: 300px;
+  right: 650px;
+}
+
+
+ /* LARGE SCREENS */
+ @media(max-width:700px){
+   .container{
+     width: 500px;
+     height: fit-content;
+   }
+   .Nav{
+    text-decoration: none;
+    font-style: italic;
+    display: flex;
+    align-content:flex-end;
+    gap: 8px;
+    display: inline-block;
+    font-size: 10px;
+    }
+    #Brand span{
+      color:chocolate;
+      font-family:monospace;
+    }
+    #email{
+  position: relative;
+  bottom: 300px;
+  right: 200px;
+}
+
+ }
+
+
